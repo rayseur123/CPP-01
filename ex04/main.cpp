@@ -1,0 +1,70 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/12/10 11:43:54 by njooris           #+#    #+#             */
+/*   Updated: 2025/12/10 15:16:06 by njooris          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <iostream>
+#include <fstream>
+#include <sstream>
+
+std::string	replace_occurence(std::string line, std::string str1, std::string str2)
+{
+	std::string	new_line;
+	
+	for (size_t i = 0; i < line.length(); i++)
+	{
+		if (i + str1.length() <= line.length() && line.substr(i, str1.length()) == str1)
+		{
+			new_line += str2;
+			i += str1.length() - 1;
+		}
+		else
+			new_line += line[i];
+	}
+	return (new_line);
+}
+
+void	file_opening_management(std::ifstream &file, std::ofstream &file_replace, std::string file_name, std::string file_name_replace)
+{
+	file.open(file_name.c_str());
+	file_replace.open(file_name_replace.c_str());
+}
+
+void	file_replacing_management(std::ifstream &file, std::ofstream &file_replace, std::string s1, std::string s2)
+{
+	std::string line;
+
+	if (file.is_open() && file_replace.is_open())
+		while (getline(file, line))
+			file_replace << replace_occurence(line, s1, s2) << std::endl;
+	else
+		std::cout << "Cannot read file" << std::endl;
+	file.close();
+	file_replace.close();
+	
+}
+
+int	main(int ac, char **av)
+{
+	std::ifstream	file;
+	std::ofstream	file_replace;
+	std::stringstream	s;
+	std::string		file_name;
+	std::string		file_name_replace;
+
+	if (ac != 4)
+		return (0);
+	file_name = av[1];
+	file_name_replace = file_name + ".replace";
+	
+	file_opening_management(file, file_replace, file_name, file_name_replace);
+	file_replacing_management(file, file_replace, av[2], av[3]);
+	return (0);
+}

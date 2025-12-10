@@ -6,14 +6,11 @@
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 17:49:30 by njooris           #+#    #+#             */
-/*   Updated: 2025/12/09 14:11:52 by njooris          ###   ########.fr       */
+/*   Updated: 2025/12/10 12:29:21 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
-#include "randomChump.hpp"
-#include "newZombie.hpp"
-#include "zombieHorde.hpp"
 
 int	main(void)
 {

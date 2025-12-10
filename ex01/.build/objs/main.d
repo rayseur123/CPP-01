@@ -1,11 +1,3 @@
-.build/objs/main.o: srcs/main.cpp includes/Zombie.hpp \
-  includes/randomChump.hpp includes/newZombie.hpp \
-  includes/zombieHorde.hpp
+.build/objs/main.o: srcs/main.cpp includes/Zombie.hpp
 
 includes/Zombie.hpp:
-
-includes/randomChump.hpp:
-
-includes/newZombie.hpp:
-
-includes/zombieHorde.hpp:

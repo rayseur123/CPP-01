@@ -1,6 +1,3 @@
-.build/objs/randomChump.o: srcs/randomChump.cpp includes/Zombie.hpp \
-  includes/newZombie.hpp
+.build/objs/randomChump.o: srcs/randomChump.cpp includes/Zombie.hpp
 
 includes/Zombie.hpp:
-
-includes/newZombie.hpp:
