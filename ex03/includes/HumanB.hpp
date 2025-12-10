@@ -11,19 +11,19 @@
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
-#include <iostream>
+#include <string>
 
 class	HumanB
 {
 	private:
-		std::string	name;
-		Weapon		*w;
+		Weapon		*_weapon;
+		std::string	_name;
 	public:
-		HumanB(void);
-		HumanB(Weapon *type_weapon);
+		HumanB(std::string name);
+		~HumanB(void);
 		void		attack(void);
 		Weapon		*getWeapon(void);
-		void		setWeapon(Weapon *weapon);
+		void		setWeapon(Weapon &weapon);
 		std::string	getName(void);
 		void		setName(std::string name);
 };

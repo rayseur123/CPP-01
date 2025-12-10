@@ -13,37 +13,37 @@
 #include "HumanA.hpp"
 #include <iostream>
 
-HumanA::HumanA()
+HumanA::HumanA(std::string name, Weapon &weapon) : _name(name), _weapon(weapon)
 {
-	w.setType("Gun");
+	return ;
 }
 
-HumanA::HumanA(Weapon &weapon)
+HumanA::~HumanA(void)
 {
-	setWeapon(weapon);	
+	return ;
 }
 
-void		HumanA::attack()
+void		HumanA::attack(void)
 {
-	std::cout << name << " attacks with their " << getWeapon().getType() << std::endl;
+	std::cout << _name << "attacks with their " << _weapon.getType() << std::endl;
 }
 
-Weapon		HumanA::getWeapon()
+Weapon		HumanA::getWeapon(void)
 {
-	return (w);
+	return (_weapon);
 }
 
 void		HumanA::setWeapon(Weapon &weapon)
 {
-	w = weapon;
+	_weapon = weapon;
 }
 
-std::string	HumanA::getName()
+std::string	HumanA::getName(void)
 {
-	return (name);
+	return (_name);
 }
 
 void		HumanA::setName(std::string name)
 {
-	this->name = name;
+	_name = name;
 }
