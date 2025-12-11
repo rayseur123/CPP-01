@@ -10,6 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef HUMANB_HPP
+#define HUMANB_HPP
+
 #include "Weapon.hpp"
 #include <string>
 
@@ -27,3 +30,5 @@ class	HumanB
 		std::string	getName(void);
 		void		setName(std::string name);
 };
+
+#endif

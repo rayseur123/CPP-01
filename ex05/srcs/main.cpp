@@ -1,37 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanA.hpp                                        :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/09 14:44:14 by njooris           #+#    #+#             */
-/*   Updated: 2025/12/09 16:59:58 by njooris          ###   ########.fr       */
+/*   Created: 2025/12/08 17:49:30 by njooris           #+#    #+#             */
+/*   Updated: 2025/12/11 17:06:18 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HUMANA_HPP
-# define HUMANA_HPP
+#include "Harl.hpp"
 
-#include "Weapon.hpp"
-#include <iostream>
-
-class	HumanA
+int	main(void)
 {
-	private:
-		std::string	_name;
-		Weapon		&_weapon;
-	public:
-		HumanA(std::string name, Weapon &weapon);
-		~HumanA(void);
+	Harl h;
 
-		void		attack(void);
-
-		Weapon		getWeapon(void);
-		void		setWeapon(Weapon &w);
-
-		std::string	getName(void);
-		void		setName(std::string name);
-};
-
-#endif
+	h.complain("DEBUG");
+	h.complain("INFO");
+	h.complain("WARNING");
+	h.complain("ERROR");
+	return (0);
+}
