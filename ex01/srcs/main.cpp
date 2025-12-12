@@ -6,7 +6,7 @@
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 17:49:30 by njooris           #+#    #+#             */
-/*   Updated: 2025/12/10 12:29:21 by njooris          ###   ########.fr       */
+/*   Updated: 2025/12/12 11:24:05 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,12 @@ int	main(void)
 	zs = ZombieHorde(10, "toto");
 	
 	int	i = 0;
-	while (i < 10)
+	for (int i = 10; i < 10; i++)
 	{
 		zs[i].annonce();
 		i++;
 	}
-	i = 0;
-	while (i < 10)
+	for (i = 0; i < 10; i++)
 	{
 		zs[i].~Zombie();
 		i++;
