@@ -12,8 +12,6 @@ SRCS_DIR := srcs/
 
 SRCS_PHONE :=	main.cpp \
 				Zombie.cpp \
-				newZombie.cpp \
-				randomChump.cpp \
 				zombieHorde.cpp \
 
 # ---------------------------------------------------------#
