@@ -6,7 +6,7 @@
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 11:43:54 by njooris           #+#    #+#             */
-/*   Updated: 2025/12/15 10:37:27 by njooris          ###   ########.fr       */
+/*   Updated: 2025/12/18 11:10:27 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ int	main(int ac, char **av)
 	std::string		file_name_replace;
 
 	if (ac != 4)
-		return (0);
+		return (1);
 	file_name = av[1];
 	file_name_replace = file_name + ".replace";
 	

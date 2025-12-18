@@ -6,7 +6,7 @@
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 17:49:30 by njooris           #+#    #+#             */
-/*   Updated: 2025/12/10 12:27:19 by njooris          ###   ########.fr       */
+/*   Updated: 2025/12/18 10:59:37 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,5 @@ int	main(void)
 	z1.annonce();
 	randomChump("Monsieur");
 	
-	z1.~Zombie();
 	return (0);
 }
