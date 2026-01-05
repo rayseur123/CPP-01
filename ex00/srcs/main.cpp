@@ -6,7 +6,7 @@
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 17:49:30 by njooris           #+#    #+#             */
-/*   Updated: 2025/12/18 10:59:37 by njooris          ###   ########.fr       */
+/*   Updated: 2026/01/05 10:32:40 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,13 @@
 int	main(void)
 {
 	Zombie	z1;
+	Zombie	*z2;
 
-	z1.set_name("test");
+	z2 = newZombie("Nicolas");
+	z1.set_name("Devan");
+	z2->annonce();
 	z1.annonce();
-	randomChump("Monsieur");
-	
+	randomChump("Nikandr");
+	delete z2;
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 17:49:30 by njooris           #+#    #+#             */
-/*   Updated: 2025/12/18 11:02:28 by njooris          ###   ########.fr       */
+/*   Updated: 2026/01/05 10:35:59 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,8 @@ int	main(void)
 {
 	Zombie	*zs;
 	
-	zs = ZombieHorde(10, "toto");
-	
-	for (int i = 0; i < 10; i++)
+	zs = ZombieHorde(3, "toto");
+	for (int i = 0; i < 3; i++)
 	{
 		zs[i].annonce();
 	}
