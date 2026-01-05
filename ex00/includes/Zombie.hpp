@@ -6,7 +6,7 @@
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 17:21:09 by njooris           #+#    #+#             */
-/*   Updated: 2025/12/10 12:27:07 by njooris          ###   ########.fr       */
+/*   Updated: 2026/01/05 12:50:35 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,10 @@
 class Zombie
 {
 	private:
-		std::string name;
+		std::string _name;
 	public:
 		Zombie(void);
+		Zombie(std::string name);
 		~Zombie(void);
 		void	annonce(void);
 		void	set_name(std::string name);
