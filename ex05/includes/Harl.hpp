@@ -6,7 +6,7 @@
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 17:21:09 by njooris           #+#    #+#             */
-/*   Updated: 2025/12/11 17:20:05 by njooris          ###   ########.fr       */
+/*   Updated: 2026/01/05 13:31:19 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Harl
 	public:
 		Harl(void);
 		~Harl(void);
-		void	complain(std::string level);
+		void	complain(const std::string &level);
 };
 
 #endif

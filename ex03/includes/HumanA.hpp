@@ -22,16 +22,16 @@ class	HumanA
 		std::string	_name;
 		Weapon		&_weapon;
 	public:
-		HumanA(std::string name, Weapon &weapon);
+		HumanA(const std::string &name, Weapon &weapon);
 		~HumanA(void);
 
-		void		attack(void);
+		void				attack(void) const;
 
-		Weapon		getWeapon(void);
-		void		setWeapon(Weapon &w);
+		Weapon				getWeapon(void) const;
+		void				setWeapon(Weapon &w);
 
-		std::string	getName(void);
-		void		setName(std::string name);
+		const std::string	&getName(void) const;
+		void				setName(const std::string &name);
 };
 
 #endif

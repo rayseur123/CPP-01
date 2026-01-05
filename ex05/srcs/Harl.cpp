@@ -6,7 +6,7 @@
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 16:31:32 by njooris           #+#    #+#             */
-/*   Updated: 2025/12/15 15:12:36 by njooris          ###   ########.fr       */
+/*   Updated: 2026/01/05 13:31:08 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ void	Harl::error(void)
 	std::cout << "This is unacceptable! I want to speak to the manager now." << std::endl;
 }
 
-void	Harl::complain(std::string level)
+void	Harl::complain(const std::string &level)
 {
 	void	(Harl::*ftab[4]) (void) = {&Harl::debug, &Harl::info,
 			&Harl::info, &Harl::error};

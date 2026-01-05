@@ -13,7 +13,7 @@
 #include "HumanB.hpp"
 #include <iostream>
 
-HumanB::HumanB(std::string name) : _weapon(NULL), _name(name)
+HumanB::HumanB(const std::string &name) : _weapon(NULL), _name(name)
 {
 	return ;
 }
@@ -29,7 +29,7 @@ void		HumanB::attack(void)
 		std::cout << _name << "attacks with their " << _weapon->getType() << std::endl;
 }
 
-Weapon		*HumanB::getWeapon(void)
+Weapon		*HumanB::getWeapon(void) const
 {
 	return (_weapon);
 }
@@ -39,12 +39,12 @@ void		HumanB::setWeapon(Weapon &weapon)
 	_weapon = &weapon;
 }
 
-std::string	HumanB::getName()
+const std::string	&HumanB::getName(void) const
 {
 	return (_name);
 }
 
-void		HumanB::setName(std::string name)
+void		HumanB::setName(const std::string &name)
 {
 	_name = name;
 }

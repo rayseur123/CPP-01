@@ -6,7 +6,7 @@
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/09 14:39:00 by njooris           #+#    #+#             */
-/*   Updated: 2025/12/09 17:04:48 by njooris          ###   ########.fr       */
+/*   Updated: 2026/01/05 13:12:54 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ class Weapon
 	private:
 		std::string	type;
 	public:
-		Weapon();
-		Weapon(std::string type);
-		~Weapon();
-		std::string	getType();
-		void setType(std::string str);
+		Weapon(void);
+		Weapon(const std::string &type);
+		~Weapon(void);
+		std::string	getType(void) const;
+		void setType(const std::string &str);
 };
 #endif

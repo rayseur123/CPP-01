@@ -22,13 +22,13 @@ class	HumanB
 		Weapon		*_weapon;
 		std::string	_name;
 	public:
-		HumanB(std::string name);
+		HumanB(const std::string &name);
 		~HumanB(void);
-		void		attack(void);
-		Weapon		*getWeapon(void);
-		void		setWeapon(Weapon &weapon);
-		std::string	getName(void);
-		void		setName(std::string name);
+		void				attack(void);
+		Weapon				*getWeapon(void) const;
+		void				setWeapon(Weapon &weapon);
+		const std::string	&getName(void) const;
+		void				setName(const std::string &name);
 };
 
 #endif

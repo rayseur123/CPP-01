@@ -6,7 +6,7 @@
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/09 14:41:50 by njooris           #+#    #+#             */
-/*   Updated: 2025/12/09 17:04:38 by njooris          ###   ########.fr       */
+/*   Updated: 2026/01/05 13:22:04 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ Weapon::Weapon(void)
 	return ;
 }
 
-Weapon::Weapon(std::string type)
+Weapon::Weapon(const std::string &type)
 {
 	this->type = type;
 }
@@ -27,12 +27,12 @@ Weapon::~Weapon(void)
 	return ;
 }
 
-std::string	Weapon::getType()
+std::string	Weapon::getType() const
 {
 	return (type);
 }
 
-void Weapon::setType(std::string str)
+void Weapon::setType(const std::string &str)
 {
 	this->type = str;
 }

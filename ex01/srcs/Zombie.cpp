@@ -6,7 +6,7 @@
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 17:29:35 by njooris           #+#    #+#             */
-/*   Updated: 2026/01/05 12:55:55 by njooris          ###   ########.fr       */
+/*   Updated: 2026/01/05 13:08:45 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,12 @@ Zombie::~Zombie(void)
 	return ;
 }
 
-void	Zombie::annonce(void)
+void	Zombie::annonce(void) const
 {
 	std::cout << _name + ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
-void	Zombie::set_name(std::string name)
+void	Zombie::set_name(const std::string &name)
 {
 	this->_name = name;
 }

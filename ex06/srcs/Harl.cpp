@@ -6,7 +6,7 @@
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 16:31:32 by njooris           #+#    #+#             */
-/*   Updated: 2025/12/12 11:55:32 by njooris          ###   ########.fr       */
+/*   Updated: 2026/01/05 13:33:42 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ enum
 	none
 };
 
-void	Harl::complain(std::string level)
+void	Harl::complain(const std::string &level)
 {
 	std::string	tabstr[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	int	i = 0;
